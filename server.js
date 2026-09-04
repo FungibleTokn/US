@@ -98,4 +98,4 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, () => console.log(`Contract Command Center running at http://localhost:${PORT}`));
+server.listen(PORT, '0.0.0.0', () => console.log(`Contract Command Center running at http://localhost:${PORT}`));

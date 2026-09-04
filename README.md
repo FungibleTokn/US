@@ -25,3 +25,11 @@ USAspending is the current source for public contract-award data. The existing o
 ## Deploy
 
 The app uses only Node's built-in modules. Deploy it to any Node-compatible host, define `PORT` if the host requires one, and route requests to `server.js`.
+
+### Render
+
+1. In Render, choose **New > Blueprint** and connect this GitHub repository.
+2. Render reads `render.yaml` and provisions a Node web service automatically.
+3. Approve the deployment. When it completes, open the generated `onrender.com` URL.
+
+The service uses `/health` as its health check. Every push to `main` automatically redeploys it.
